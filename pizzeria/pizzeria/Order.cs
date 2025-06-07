@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace pizzeria
 {
-    class Program
+    internal class Order
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
-
