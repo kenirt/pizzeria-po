@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pizzeria
+namespace pizzeria.Enums
 {
-    internal class Order
+    public enum PizzaSize
     {
+        Small,
+        Medium,
+        Large
     }
 }
