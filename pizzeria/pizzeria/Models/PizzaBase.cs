@@ -10,11 +10,12 @@ namespace pizzeria.Models
 {
     public abstract class PizzaBase: IPizza
     {
-        public string Name;
-        public PizzaSize Size;
-        public List<Ingredient> Ingredients;
+        public string Name { get; protected set; }
+        public PizzaSize Size { get; protected set; }
+        public List<Ingredient> Ingredients { get; protected set; }
 
-        protected PizzaBase(string name, string size) 
+
+        protected PizzaBase(string name, PizzaSize size) 
         {  
             Name = name;
             Size = size;

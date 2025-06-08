@@ -1,4 +1,5 @@
-﻿using pizzeria.Models;
+﻿using pizzeria.Enums;
+using pizzeria.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,10 @@ namespace pizzeria.Interfaces
 {
     public interface IPizza
     {
-        string Name;
-        PizzaSize Size;
-        List<Ingredient> Ingredients;
+        string Name { get; }
+        PizzaSize Size { get; }
+        List<Ingredient> Ingredients { get; }
+
         decimal CalculatePrice();
     }
 }

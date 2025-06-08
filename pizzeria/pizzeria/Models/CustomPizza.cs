@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace pizzeria.Models
 {
-    internal class CustomPizza : PizzaBase
+    public class CustomPizza : PizzaBase
     {
         public CustomPizza(PizzaSize size) : base("Custom Pizza", size)
         {

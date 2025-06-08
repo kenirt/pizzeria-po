@@ -38,7 +38,7 @@ namespace pizzeria.Models
 
         public void AdvanceStatus()
         {
-            if(Status == OrderStatus.Cancelled)
+            if (Status == OrderStatus.Cancelled)
             {
                 throw new InvalidOperationException();
             }
@@ -58,4 +58,5 @@ namespace pizzeria.Models
 
             }
         }
+    }
 }
