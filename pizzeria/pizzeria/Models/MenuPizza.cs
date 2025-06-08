@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace pizzeria.Models
 {
-    internal class MenuPizza : PizzaBase
+    public class MenuPizza : PizzaBase
     {
         private decimal BasePrice;
 
@@ -15,6 +15,27 @@ namespace pizzeria.Models
         {
             BasePrice = basePrice;
         }
+        public override decimal CalculatePrice()
+        {
+            decimal sizeMultiplier;
 
+            switch (Size)
+            {
+                case PizzaSize.Small:
+                    sizeMultiplier = 0.8m;
+                    break;
+                case PizzaSize.Medium:
+                    sizeMultiplier = 1.0m;
+                    break;
+                case PizzaSize.Large:
+                    sizeMultiplier = 1.2m;
+                    break;
+                default:
+                    sizeMultiplier = 1.0m;
+                    break;
+            }
+
+            return BasePrice * sizeMultiplier;
+        }
     }
 }

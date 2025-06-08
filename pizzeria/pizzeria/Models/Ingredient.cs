@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace pizzeria.Models
 {
-    internal class Ingredient
+    public class Ingredient
     {
         public string Name;
         public decimal Price;
@@ -17,6 +17,7 @@ namespace pizzeria.Models
         {
             Name = name;
             Price = price;
+            Restriction = restriction;
 
         }
     }
