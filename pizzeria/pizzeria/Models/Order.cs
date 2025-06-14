@@ -1,62 +1,86 @@
 ﻿using pizzeria.Enums;
-using pizzeria.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pizzeria.Models
 {
     public class Order
     {
-        public int Id;
-        public DateTime TimePlaced;
-        public OrderStatus Status;
-        public IPizza Pizza;
-        public decimal FinalPrice;
-        public Order(int id, IPizza pizza)
+        public required int Id { get; init; }
+        public OrderStatus Status { get; private set; }
+        public List<OrderStatusHistoryEntry> StatusHistory { get; private set; }
+        public required string Username { get; init; }
+        public required List<OrderPizzaSnapshot> Pizzas { get; init; }
+        public required decimal InitialPrice { get; init; }
+        public decimal FinalPrice { get; private set; }
+        public string? PromotionName { get; private set; }
+        public required bool IsFirstOrder { get; init; }
+
+        public Order()
         {
-            Id = id;
-            Pizza = pizza;
-            TimePlaced = DateTime.Now;
             Status = OrderStatus.Pending;
-            FinalPrice = pizza.CalculatePrice();
+            StatusHistory =
+            [
+                new OrderStatusHistoryEntry
+                {
+                    Status = Status,
+                    Timestamp = DateTime.UtcNow
+                }
+            ];
+            FinalPrice = InitialPrice;
         }
 
-        public void Cancel()
+        public void SetStatus(OrderStatus status)
         {
-            if (Status == OrderStatus.Pending)
+            Status = status;
+            StatusHistory.Add(new OrderStatusHistoryEntry
             {
-                Status = OrderStatus.Cancelled;
-            }
-            else
-            {
-                Console.WriteLine("Cannot cancel order");
-            }
+                Status = status,
+                Timestamp = DateTime.UtcNow
+            });
         }
 
-        public void AdvanceStatus()
+        public void SetPromotionName(string promotionName)
         {
-            if (Status == OrderStatus.Cancelled)
-            {
-                throw new InvalidOperationException();
-            }
-            switch (Status)
-            {
-                case OrderStatus.Pending:
-                    Status = OrderStatus.InPreparation;
-                    break;
-                case OrderStatus.InPreparation:
-                    Status = OrderStatus.Ready;
-                    break;
-                case OrderStatus.Ready:
-                    Status = OrderStatus.Ready;
-                    break;
-                default:
-                    break;
+            if (string.IsNullOrWhiteSpace(promotionName))
+                throw new ArgumentException("Promotion name cannot be null or empty.", nameof(promotionName));
+            PromotionName = promotionName;
+        }
 
-            }
+        public void SetFinalPrice(decimal price)
+        {
+            if (price < 0)
+                throw new ArgumentOutOfRangeException(nameof(price), "Price cannot be negative.");
+            FinalPrice = price;
         }
     }
+
+    public class OrderPizzaSnapshot
+    {
+        public required string Name { get; init; }
+        public required string Size { get; init; }
+        public required decimal Price { get; init; }
+        public List<string>? Ingredients { get; init; }
+
+        public OrderPizzaSnapshot() { }
+    }
+
+    public class OrderStatusHistoryEntry
+    {
+        public required OrderStatus Status { get; init; }
+        public required DateTime Timestamp { get; init; }
+
+        public OrderStatusHistoryEntry() { }
+    }
+
+    public class OrderArchiveSnapshot
+    {
+        public required List<OrderStatusHistoryEntry> StatusHistory { get; init; }
+        public required string Username { get; init; }
+        public required List<OrderPizzaSnapshot> Pizzas { get; init; }
+        public required decimal InitialPrice { get; init; }
+        public required decimal FinalPrice { get; init; }
+        public required string? PromotionName { get; init; }
+
+        public OrderArchiveSnapshot() { }
+    }
 }
+

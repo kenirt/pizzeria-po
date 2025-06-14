@@ -1,36 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using pizzeria.Models;
+using pizzeria.Interfaces;
+using pizzeria.Enums;
+using System.Text.Json;
 
 namespace pizzeria.Models
 {
     public class Menu
     {
-        private List<MenuPizza> menuPizzas;
-        public Menu() 
-        { 
-            menuPizzas = new List<MenuPizza>();
-        }
-        public void AddPizza(MenuPizza pizza)
-        {
-            menuPizzas.Add(pizza);
-        }
-        public List<MenuPizza> GetAvailablePizzas()
-        { 
-            return menuPizzas.ToList(); 
-        }
-        public MenuPizza GetPizzaByName(string name, bool throwIfNotFound = false) 
-        {
-            var pizza = menuPizzas.FirstOrDefault(p =>
-            p.Name.Equals(name, System.StringComparison.OrdinalIgnoreCase));
+        public List<MenuItem> MenuItems { get; init; } = new List<MenuItem>();
+        public List<Ingredient> Ingredients { get; init; } = new List<Ingredient>();
+    }
 
-            if (pizza == null && throwIfNotFound)
-                throw new System.ArgumentException($"Pizza {name} not found in menu.");
+    public class MenuItem
+    {
+        public Guid Id { get; init; } = Guid.NewGuid();
+        public required string Name { get; init; }
+        public required decimal Price { get; init; }
+    }
 
-            return pizza;
-
-        }
+    public class Ingredient
+    {
+        public Guid Id { get; init; } = Guid.NewGuid();
+        public required string Name { get; init; }
+        public required decimal Price { get; init; }
+        public required IngredientRestriction Restriction { get; init; }
     }
 }
