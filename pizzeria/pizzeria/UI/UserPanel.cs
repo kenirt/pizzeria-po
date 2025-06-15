@@ -280,28 +280,28 @@ namespace pizzeria.UI
 
         private void ViewMenu()
         {
-            Console.WriteLine("-------------------------------------------------------------------------");
-            Console.WriteLine("{0,-3} {1,-20} {2,10} {3,10} {4,10}", "#", "Pizza", "Small", "Medium", "Large");
-            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
+            Console.WriteLine("{0,-3} {1,-20} {2,-10} {3,-10} {4,-10} {5,-40}", "#", "Pizza", "Small", "Medium", "Large", "Ingredients");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
 
             for (int i = 0; i < _menu.MenuItems.Count; i++)
             {
                 var item = _menu.MenuItems[i];
                 decimal small = Math.Round(item.Price * 0.8m, 2);
                 decimal medium = Math.Round(item.Price * 1.0m, 2);
-                decimal large = Math.Round(item.Price * 1.2m, 2);
-
-                Console.WriteLine("{0,-3} {1,-20} {2,10:C} {3,10:C} {4,10:C}", i + 1, item.Name, small, medium, large);
+                decimal large = Math.Round(item.Price * 1.2m, 2);                
+                string ingredientsText = item.Ingredients.Any() ? string.Join(", ", item.Ingredients.Select(ing => ing.Name)) : "None";
+                Console.WriteLine("{0,-3} {1,-20} {2,10:C} {3,10:C} {4,10:C} {5,-40}", i + 1, item.Name, small, medium, large, ingredientsText);
             }
 
-            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
 
         private void ViewIngredients()
         {
-            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
             Console.WriteLine("{0,-3} {1,-20} {2,10}", "#", "Ingredient", "Price");
-            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
 
             for (int i = 0; i < _menu.Ingredients.Count; i++)
             {
@@ -309,7 +309,7 @@ namespace pizzeria.UI
                 Console.WriteLine("{0,-3} {1,-20} {2,10:C}", i + 1, ingredient.Name, ingredient.Price);
             }
 
-            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------------------------------------------------");
         }
 
         public void Show()

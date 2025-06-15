@@ -16,6 +16,8 @@ namespace pizzeria.Models
         public Guid Id { get; init; } = Guid.NewGuid();
         public required string Name { get; init; }
         public required decimal Price { get; init; }
+        public List<Ingredient> Ingredients { get; init; } = new List<Ingredient>(); 
+
     }
 
     public class Ingredient

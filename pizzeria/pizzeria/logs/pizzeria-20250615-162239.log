@@ -1,0 +1,7 @@
+15.06.2025 16:22:39: INFO: Active orders loaded successfully from C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+15.06.2025 16:22:39: INFO: Archived orders loaded successfully from C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+15.06.2025 16:22:39: INFO: OrderQueue initialized.
+15.06.2025 16:22:39: INFO: Users loaded successfully from C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+15.06.2025 16:22:39: INFO: UserManager initialized.
+15.06.2025 16:22:39: INFO: User authenticated successfully: test, Login: test
+15.06.2025 16:22:39: INFO: Session started for user: test

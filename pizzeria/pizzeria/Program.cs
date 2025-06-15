@@ -15,25 +15,41 @@ public class Program
         IOrderQueue orderQueue = new OrderQueue(promotionManager, logger);
         IUserManager userManager = new UserManager(logger);
         SessionService sessionService = new SessionService(logger, userManager);
-        
-        var menu = new Menu
-        {
-            MenuItems = new List<MenuItem>
+
+
+        var ingredients = new List<Ingredient>
             {
-                new() { Name = "Margherita", Price = 8.99m},
-                new() { Name = "Pepperoni", Price = 10.99m},
-                new() { Name = "Vegetarian", Price = 9.49m},
-                new() { Name = "BBQ Chicken", Price = 11.49m},
-                new() { Name = "Hawaiian", Price = 10.49m},
-            },
-            Ingredients = new List<Ingredient>
-            {
-                new() { Name = "Tomato Sauce", Price = 0.50m, Restriction = IngredientRestriction.None , Type = IngredientType.Sauce},
+                new() { Name = "Tomato Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
                 new() { Name = "Marinara Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
                 new() { Name = "Barbecue Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
                 new() { Name = "Pesto Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
                 new() { Name = "Mozzarella Cheese", Price = 1.00m, Restriction = IngredientRestriction.None, Type = IngredientType.Cheese },
-                new() { Name = "Pepperoni", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat }
+                new() { Name = "Pepperoni", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat },
+                new() { Name = "Ham", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat },
+                new() { Name = "Pineapple", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Vegetable },
+                new() { Name = "chicken", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat }
+           };
+        var menu = new Menu
+        {
+            MenuItems = new List<MenuItem>
+            {
+                new() { Name = "Margherita", Price = 8.99m, Ingredients = new List<Ingredient> { ingredients[0], ingredients[4], ingredients[5] }},
+                new() { Name = "Pepperoni", Price = 10.99m, Ingredients = new List<Ingredient> { ingredients[0], ingredients[6], ingredients[7] }},
+                new() { Name = "Vegetarian", Price = 9.49m, Ingredients = new List<Ingredient> { ingredients[0], ingredients[7] }},
+                new() { Name = "BBQ Chicken", Price = 11.49m, Ingredients = new List<Ingredient> { ingredients[2], ingredients[4], ingredients[8]  }},
+                new() { Name = "Hawaiian", Price = 10.49m, Ingredients = new List < Ingredient > { ingredients[0], ingredients[7] }},
+            },
+            Ingredients = new List<Ingredient>
+            {
+                new() { Name = "Tomato Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Marinara Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Barbecue Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Pesto Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Mozzarella Cheese", Price = 1.00m, Restriction = IngredientRestriction.None, Type = IngredientType.Cheese },
+                new() { Name = "Pepperoni", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat },
+                new() { Name = "Ham", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat },
+                new() { Name = "Pineapple", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Vegetable },
+                new() { Name = "chicken", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat }
             }
         };
 
