@@ -28,9 +28,12 @@ public class Program
             },
             Ingredients = new List<Ingredient>
             {
-                new() { Name = "Tomato Sauce", Price = 0.50m, Restriction = IngredientRestriction.None },
-                new() { Name = "Mozzarella Cheese", Price = 1.00m, Restriction = IngredientRestriction.None },
-                new() { Name = "Pepperoni", Price = 1.50m, Restriction = IngredientRestriction.None }
+                new() { Name = "Tomato Sauce", Price = 0.50m, Restriction = IngredientRestriction.None , Type = IngredientType.Sauce},
+                new() { Name = "Marinara Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Barbecue Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Pesto Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
+                new() { Name = "Mozzarella Cheese", Price = 1.00m, Restriction = IngredientRestriction.None, Type = IngredientType.Cheese },
+                new() { Name = "Pepperoni", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat }
             }
         };
 

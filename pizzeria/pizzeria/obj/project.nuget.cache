@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hsjNUnIako4=",
+  "dgSpecHash": "GQOudrt9G3Q=",
   "success": true,
-  "projectFilePath": "/home/knrt/Desktop/pizzeria-projekt-po/pizzeria/pizzeria/pizzeria.csproj",
-  "expectedPackageFiles": [
-    "/home/knrt/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
-    "/home/knrt/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
-    "/home/knrt/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -196,6 +196,20 @@ namespace pizzeria.UI
                                 continue;
                             }
 
+                            // Max 1 Sauce
+
+                            if (selectedIngredient.Type == IngredientType.Sauce)
+                            {
+                                bool alreadyHasSauce = ingredients.Any(i => i.Type == IngredientType.Sauce);
+                                if (alreadyHasSauce)
+                                {
+                                    Console.WriteLine("You can only add one sauce to your pizza.");
+                                    Console.WriteLine("Press any key to continue...");
+                                    Console.ReadKey();
+                                    continue;
+                                }
+                            }
+
                             // Add ingredient
                             ingredients.Add(selectedIngredient);
                             ingredientCounts[ingredientIndex] = count + 1;

@@ -1,0 +1,15 @@
+15.06.2025 11:41:40: INFO: Active orders loaded successfully from C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+15.06.2025 11:41:40: INFO: Archived orders loaded successfully from C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+15.06.2025 11:41:40: INFO: OrderQueue initialized.
+15.06.2025 11:41:40: INFO: Users loaded successfully from C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+15.06.2025 11:41:40: INFO: UserManager initialized.
+15.06.2025 11:41:40: INFO: User authenticated successfully: test, Login: test
+15.06.2025 11:41:40: INFO: Session started for user: test
+15.06.2025 11:42:08: INFO: Order 4 placed by user test with 1 pizzas.
+15.06.2025 11:42:09: INFO: Session ended for user: test
+15.06.2025 11:42:10: INFO: Shutting down services...
+15.06.2025 11:42:10: INFO: Users saved successfully to C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+15.06.2025 11:42:10: INFO: UserManager shutdown. Users saved to file.
+15.06.2025 11:42:10: INFO: Active orders saved successfully to C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+15.06.2025 11:42:10: INFO: Archived orders saved successfully to C:\Users\Asus\ConsoleAppCore\Jolo\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+15.06.2025 11:42:10: INFO: OrderQueue shutdown. Active orders saved to file.

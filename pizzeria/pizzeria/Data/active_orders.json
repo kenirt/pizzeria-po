@@ -87,5 +87,28 @@
     "FinalPrice": 19.97,
     "PromotionName": "Summer 10% Off",
     "IsFirstOrder": false
+  },
+  {
+    "Id": 4,
+    "Status": 0,
+    "StatusHistory": [
+      {
+        "Status": 0,
+        "Timestamp": "2025-06-15T09:42:08.3135089Z"
+      }
+    ],
+    "Username": "test",
+    "Pizzas": [
+      {
+        "Name": "Pepperoni",
+        "Size": "Large",
+        "Price": 13.19,
+        "Ingredients": null
+      }
+    ],
+    "InitialPrice": 13.19,
+    "FinalPrice": 11.87,
+    "PromotionName": "Summer 10% Off",
+    "IsFirstOrder": false
   }
 ]

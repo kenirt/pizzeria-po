@@ -24,5 +24,6 @@ namespace pizzeria.Models
         public required string Name { get; init; }
         public required decimal Price { get; init; }
         public required IngredientRestriction Restriction { get; init; }
+        public IngredientType Type { get; init; } = IngredientType.Default;
     }
 }
