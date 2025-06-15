@@ -11,7 +11,7 @@ namespace pizzeria.Interfaces
         void Initialize();
         void Shutdown();
         int PlaceOrder(string username, List<IPizza> pizzas);
-        void CancelOrder(int orderId);
+        void CancelOrder(int orderId, bool employee = false, string username = "");
         void CancelAllOrders();
         void ClearOrderHistory();
         Order GetOrder(int orderId);

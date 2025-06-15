@@ -24,29 +24,66 @@ namespace pizzeria.UI
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Orders Menu:");
-                Console.WriteLine("1. View Your Active Orders");
-                Console.WriteLine("2. View Your Order History");
-                Console.WriteLine("Press any other key to return to the main menu.");
-                Console.Write("Select an option: ");
-                var choice = Console.ReadLine();
+                Console.WriteLine("Your Active Orders:");
+                var activeOrders = _orderQueue.GetActiveOrdersByUserId(_username)
+                    .Where(o => o.Status == OrderStatus.Pending)
+                    .ToList();
 
-                switch (choice)
+                if (activeOrders.Count == 0)
                 {
-                    case "1":
-                        listOrders.ShowUserActiveOrders(_username);
-                        break;
-                    case "2":
-                        listOrders.ShowUserArchivedOrders(_username);
-                        break;
-                    default:
-                        return;
+                    Console.WriteLine("You have no pending orders.");
                 }
-                Console.WriteLine("Press any key to continue...");
-                Console.ReadKey();
+                else
+                {
+                    for (int i = 0; i < activeOrders.Count; i++)
+                    {
+                        var order = activeOrders[i];
+                        Console.WriteLine($"{i + 1}. Placed: {order.StatusHistory.First().Timestamp:g}, Price: {order.FinalPrice:C}, Status: {order.Status}");
+                    }
+                    Console.WriteLine();
+                    Console.Write("Enter the number of the order to cancel, or press Enter to skip: ");
+                    var input = Console.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(input))
+                    {
+                        if (int.TryParse(input, out int idx) && idx > 0 && idx <= activeOrders.Count)
+                        {
+                            var orderToCancel = activeOrders[idx - 1];
+                            try
+                            {
+                                _orderQueue.CancelOrder(orderToCancel.Id, false, _username);
+                                Console.WriteLine("Order cancelled successfully.");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Could not cancel order: {ex.Message}");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid selection. No order cancelled.");
+                        }
+                        Console.WriteLine("Press any key to continue...");
+                        Console.ReadKey();
+                        continue; // Refresh the list after cancellation attempt
+                    }
+                }
+
+                Console.WriteLine();
+                Console.Write("Would you like to see your order history? (y/n): ");
+                var historyInput = Console.ReadLine();
+                if (historyInput?.Trim().ToLower() == "y")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Your Order History:");
+                    listOrders.ShowUserArchivedOrders(_username);
+                    Console.WriteLine();
+                    Console.WriteLine("Press any key to return to the previous menu.");
+                    Console.ReadKey();
+                }
+                break;
             }
         }
-        
+
         private void AddPizzaToOrder()
         {
             Console.Clear();

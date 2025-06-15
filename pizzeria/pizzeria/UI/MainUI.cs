@@ -25,6 +25,7 @@ namespace pizzeria.UI
         public void Run()
         {
             _sessionService.StartSession("test", "#Test123"); // For testing purposes, replace with actual login logic
+            //_sessionService.StartSession("employee", "employee"); // For testing purposes, replace with actual login logic
             while (true)
             {
                 Console.WriteLine("Welcome to the Pizzeria Management System!");

@@ -3,6 +3,7 @@ using pizzeria.Interfaces;
 using pizzeria.UI;
 using pizzeria.Models;
 using pizzeria.Enums;
+using pizzeria.Utils;
 
 namespace pizzeria;
 public class Program
@@ -37,6 +38,7 @@ public class Program
 
         try
         {
+            Console.WriteLine(HashPassword.Hash("employee"));
             Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
             orderQueue.Initialize();
             userManager.Initialize();

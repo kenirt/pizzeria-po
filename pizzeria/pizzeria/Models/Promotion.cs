@@ -10,7 +10,7 @@ namespace pizzeria.Models
         public DateTime EndDate { get; init; }
 
         public bool IsActive() =>
-            StartDate >= DateTime.Now && DateTime.Now <= EndDate;
+            StartDate <= DateTime.Now && DateTime.Now <= EndDate;
         public abstract bool IsApplicable(Order order);
         public abstract decimal CalculateDiscount(Order order);
     }
@@ -25,7 +25,7 @@ namespace pizzeria.Models
         }
         public override decimal CalculateDiscount(Order order)
         {
-            return order.InitialPrice * (DiscountPercentage / 100);
+            return Math.Round(order.InitialPrice * (DiscountPercentage / 100), 2);
         }
     }
 
@@ -41,7 +41,7 @@ namespace pizzeria.Models
         public override decimal CalculateDiscount(Order order)
         {
             // Calculate the discount based on the total price of the order
-            return order.InitialPrice * (DiscountPercentage / 100);
+            return Math.Round(order.InitialPrice * (DiscountPercentage / 100),2);
         }
     }
 
@@ -59,7 +59,7 @@ namespace pizzeria.Models
         {
             // Calculate the discount based on the cheapest pizza in the order
             var pizzasToGetFree = order.Pizzas.OrderBy(p => p.Price).Take(Y).ToList();
-            return pizzasToGetFree.Sum(p => p.Price);
+            return Math.Round(pizzasToGetFree.Sum(p => p.Price),2);
         }
     }
 
@@ -75,7 +75,7 @@ namespace pizzeria.Models
 
         public override decimal CalculateDiscount(Order order)
         {
-            return DiscountAmount;
+            return Math.Round(DiscountAmount,2);
         }
     }
 }

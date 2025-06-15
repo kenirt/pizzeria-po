@@ -97,7 +97,7 @@ namespace pizzeria.UI
             {
                 try
                 {
-                    _orderQueue.CancelOrder(orderId);
+                    _orderQueue.CancelOrder(orderId, true);
                     Console.WriteLine($"Order {orderId} cancelled successfully.");
                 }
                 catch (Exception ex)

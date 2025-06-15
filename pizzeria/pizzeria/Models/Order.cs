@@ -1,31 +1,34 @@
-﻿using pizzeria.Enums;
+﻿using System.Text.Json.Serialization;
+using pizzeria.Enums;
 
 namespace pizzeria.Models
 {
     public class Order
     {
-        public required int Id { get; init; }
+        public int Id { get; private set; }
         public OrderStatus Status { get; private set; }
         public List<OrderStatusHistoryEntry> StatusHistory { get; private set; }
-        public required string Username { get; init; }
-        public required List<OrderPizzaSnapshot> Pizzas { get; init; }
-        public required decimal InitialPrice { get; init; }
+        public string Username { get; private set; }
+        public List<OrderPizzaSnapshot> Pizzas { get; private set; }
+        public decimal InitialPrice { get; private set; }
         public decimal FinalPrice { get; private set; }
         public string? PromotionName { get; private set; }
-        public required bool IsFirstOrder { get; init; }
+        public bool IsFirstOrder { get; private set; }
 
-        public Order()
+        [JsonConstructor]
+        public Order(int id, OrderStatus status, List<OrderStatusHistoryEntry> statusHistory, string username,
+                     List<OrderPizzaSnapshot> pizzas, decimal initialPrice, bool isFirstOrder, decimal finalPrice = 0,
+                     string? promotionName = null)
         {
-            Status = OrderStatus.Pending;
-            StatusHistory =
-            [
-                new OrderStatusHistoryEntry
-                {
-                    Status = Status,
-                    Timestamp = DateTime.UtcNow
-                }
-            ];
-            FinalPrice = InitialPrice;
+            Id = id;
+            Status = status;
+            StatusHistory = statusHistory ?? new List<OrderStatusHistoryEntry>();
+            Username = username;
+            Pizzas = pizzas ?? new List<OrderPizzaSnapshot>();
+            InitialPrice = initialPrice;
+            FinalPrice = finalPrice;
+            PromotionName = promotionName;
+            IsFirstOrder = isFirstOrder;
         }
 
         public void SetStatus(OrderStatus status)

@@ -1,0 +1,91 @@
+[
+  {
+    "Id": 2,
+    "Status": 0,
+    "StatusHistory": [
+      {
+        "Status": 0,
+        "Timestamp": "2025-06-15T08:10:48.8558629Z"
+      }
+    ],
+    "Username": "test",
+    "Pizzas": [
+      {
+        "Name": "Vegetarian",
+        "Size": "Medium",
+        "Price": 9.49,
+        "Ingredients": null
+      },
+      {
+        "Name": "Custom Pizza",
+        "Size": "Large",
+        "Price": 12.00,
+        "Ingredients": [
+          "Mozzarella Cheese",
+          "Tomato Sauce",
+          "Tomato Sauce"
+        ]
+      }
+    ],
+    "InitialPrice": 21.49,
+    "FinalPrice": 19.34,
+    "PromotionName": "Summer 10% Off",
+    "IsFirstOrder": false
+  },
+  {
+    "Id": 1,
+    "Status": 0,
+    "StatusHistory": [
+      {
+        "Status": 0,
+        "Timestamp": "2025-06-15T08:20:08.4520949Z"
+      }
+    ],
+    "Username": "test",
+    "Pizzas": [
+      {
+        "Name": "Pepperoni",
+        "Size": "Medium",
+        "Price": 10.99,
+        "Ingredients": null
+      }
+    ],
+    "InitialPrice": 10.99,
+    "FinalPrice": 9.89,
+    "PromotionName": "Summer 10% Off",
+    "IsFirstOrder": false
+  },
+  {
+    "Id": 3,
+    "Status": 0,
+    "StatusHistory": [
+      {
+        "Status": 0,
+        "Timestamp": "2025-06-15T08:26:37.7749913Z"
+      }
+    ],
+    "Username": "test",
+    "Pizzas": [
+      {
+        "Name": "Pepperoni",
+        "Size": "Large",
+        "Price": 13.19,
+        "Ingredients": null
+      },
+      {
+        "Name": "Custom Pizza",
+        "Size": "Medium",
+        "Price": 9.00,
+        "Ingredients": [
+          "Tomato Sauce",
+          "Tomato Sauce",
+          "Mozzarella Cheese"
+        ]
+      }
+    ],
+    "InitialPrice": 22.19,
+    "FinalPrice": 19.97,
+    "PromotionName": "Summer 10% Off",
+    "IsFirstOrder": false
+  }
+]

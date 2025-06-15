@@ -123,14 +123,15 @@ namespace pizzeria.Services
                     }
                 ).ToList();
 
-            var order = new Order
-            {
-                Id = GetNextAvailableOrderId(),
-                Username = username,
-                Pizzas = pizzaSnapshots,
-                InitialPrice = pizzas.Sum(p => p.CalculatePrice()),
-                IsFirstOrder = !HasUserMadeAnyOrders(username),
-            };
+            var order = new Order(
+                id: GetNextAvailableOrderId(),
+                status: OrderStatus.Pending,
+                statusHistory: [new OrderStatusHistoryEntry { Status = OrderStatus.Pending, Timestamp = DateTime.UtcNow }],
+                username: username,
+                pizzas: pizzaSnapshots,
+                initialPrice: pizzas.Sum(p => p.CalculatePrice()),
+                isFirstOrder: !HasUserMadeAnyOrders(username)
+            );
 
             var (Name, Discount) = _promotionManager.GetBestPromotion(order);
             if (Name != null)
@@ -147,11 +148,13 @@ namespace pizzeria.Services
             _logger.LogInfo($"Order {order.Id} placed by user {username} with {pizzas.Count} pizzas.");
             return order.Id;
         }
-        public void CancelOrder(int orderId)
+        public void CancelOrder(int orderId, bool isEmployee = false, string username = "")
         {
             var order = ActiveOrders.FirstOrDefault(o => o.Id == orderId) ?? throw new ArgumentException($"Order with ID {orderId} not found.");
-            if (order.Status != OrderStatus.Pending)
+            if (order.Status != OrderStatus.Pending && !isEmployee)
                 throw new InvalidOperationException("Cannot cancel an order that is not pending.");
+            if (order.Username != username && !isEmployee)
+                throw new InvalidOperationException("Only the user who placed the order or an employee can cancel it.");
 
             order.SetStatus(OrderStatus.Cancelled);
             _logger.LogInfo($"Order {order.Id} has been cancelled.");
@@ -171,7 +174,7 @@ namespace pizzeria.Services
         {
             foreach (var order in ActiveOrders)
             {
-                CancelOrder(order.Id);
+                order.SetStatus(OrderStatus.Cancelled);
             }
             ActiveOrders.Clear();
             _logger.LogWarning("All orders have been cancelled.");
