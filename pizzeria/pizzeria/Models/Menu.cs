@@ -7,8 +7,8 @@ namespace pizzeria.Models
 {
     public class Menu
     {
-        public List<MenuItem> MenuItems { get; init; } = new List<MenuItem>();
-        public List<Ingredient> Ingredients { get; init; } = new List<Ingredient>();
+        public required List<MenuItem> MenuItems { get; init; } = new List<MenuItem>();
+        public required List<Ingredient> Ingredients { get; init; } = new List<Ingredient>();
     }
 
     public class MenuItem

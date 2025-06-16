@@ -69,9 +69,9 @@ namespace pizzeria.UI
                 }
 
                 Console.WriteLine();
-                Console.Write("Would you like to see your order history? (y/n): ");
+                Console.Write("Would you like to see your order history? (Y/N): ");
                 var historyInput = Console.ReadLine();
-                if (historyInput?.Trim().ToLower() == "y")
+                if (historyInput?.Trim().ToUpper() == "Y")
                 {
                     Console.WriteLine();
                     Console.WriteLine("Your Order History: \n");

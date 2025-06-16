@@ -43,6 +43,8 @@ public class LoginPanel
             Console.WriteLine($"Login failed: {ex.Message}");
             _logger.LogError($"Login failed for user '{username}': {ex.Message}");
             Console.WriteLine("Please try again.");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 
@@ -106,16 +108,20 @@ public class LoginPanel
         {
             Console.WriteLine($"Registration failed: {ex.Message}");
             _logger.LogError($"Registration failed for user '{username}': {ex.Message}");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
         return;
     }
     public void Show()
     {
-        Console.WriteLine("1. Login");
-        Console.WriteLine("2. Register");
-        Console.WriteLine("Press any other key to exit");
         while (!LoggedIn)
         {
+            Console.Clear();
+            Console.WriteLine("Welcome to the Pizzeria Management System!");
+            Console.WriteLine("1. Login");
+            Console.WriteLine("2. Register");
+            Console.WriteLine("Press any other key to exit");
             Console.Write("Select an option: ");
             var choice = Console.ReadLine();
             switch (choice)

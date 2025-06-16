@@ -24,13 +24,12 @@ namespace pizzeria.UI
 
         public void Run()
         {
-            _sessionService.StartSession("test", "#Test123"); // For testing purposes, replace with actual login logic
-            //_sessionService.StartSession("employee", "employee"); // For testing purposes, replace with actual login logic
+            //_sessionService.StartSession("test", "#Test123"); // For testing purposes
+            //_sessionService.StartSession("employee", "employee"); // For testing purposes
             while (true)
             {
-                Console.WriteLine("Welcome to the Pizzeria Management System!");
                 LoginPanel login = new(_logger, _userManager, _sessionService);
-               // login.Show();
+                login.Show();
 
 
                 if (_sessionService.CurrentUser == null)

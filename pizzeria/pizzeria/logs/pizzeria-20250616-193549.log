@@ -1,0 +1,7 @@
+6/16/2025 7:35:49 PM: INFO: Active orders loaded successfully from /home/knrt/Desktop/ANOTHER/pizzeria-projekt-po/pizzeria/pizzeria/bin/Debug/net8.0/../../../Data/active_orders.json.
+6/16/2025 7:35:49 PM: INFO: Archived orders loaded successfully from /home/knrt/Desktop/ANOTHER/pizzeria-projekt-po/pizzeria/pizzeria/bin/Debug/net8.0/../../../Data/archived_orders.json.
+6/16/2025 7:35:49 PM: INFO: OrderQueue initialized.
+6/16/2025 7:35:49 PM: INFO: Users loaded successfully from /home/knrt/Desktop/ANOTHER/pizzeria-projekt-po/pizzeria/pizzeria/bin/Debug/net8.0/../../../Data/users.json.
+6/16/2025 7:35:49 PM: INFO: UserManager initialized.
+6/16/2025 7:35:49 PM: INFO: User authenticated successfully: test, Login: test
+6/16/2025 7:35:49 PM: INFO: Session started for user: test

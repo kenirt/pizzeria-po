@@ -11,7 +11,35 @@ public class Program
     public static void Main()
     {
         ILogger logger = new FileLogger();
-        IPromotionManager promotionManager = new PromotionManager();
+        IPromotionManager promotionManager = new PromotionManager
+        {
+            Promotions = new List<IPromotion>
+            {
+                new BuyXGetYFreePromotion
+                {
+                    Name = "Buy 2 Get 1 Free",
+                    StartDate = DateTime.Now.AddDays(-1),
+                    EndDate = DateTime.Now.AddDays(30),
+                    X = 2,
+                    Y = 1
+                },
+                new FirstOrderPromotion
+                {
+                    Name = "First Order Discount",
+                    StartDate = DateTime.Now.AddDays(-1),
+                    EndDate = DateTime.Now.AddDays(30),
+                    DiscountPercentage = 10
+                },
+                new PercentagePromotion
+                {
+                    Name = "Summer 10% Off",
+                    StartDate = DateTime.Now.AddDays(-1),
+                    EndDate = DateTime.Now.AddDays(30),
+                    DiscountPercentage = 10
+                }
+            }
+        };
+
         IOrderQueue orderQueue = new OrderQueue(promotionManager, logger);
         IUserManager userManager = new UserManager(logger);
         SessionService sessionService = new SessionService(logger, userManager);

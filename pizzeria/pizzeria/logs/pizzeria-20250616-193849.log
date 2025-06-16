@@ -1,0 +1,8 @@
+6/16/2025 7:38:50 PM: INFO: Active orders loaded successfully from /home/knrt/Desktop/ANOTHER/pizzeria-projekt-po/pizzeria/pizzeria/bin/Debug/net8.0/../../../Data/active_orders.json.
+6/16/2025 7:38:50 PM: INFO: Archived orders loaded successfully from /home/knrt/Desktop/ANOTHER/pizzeria-projekt-po/pizzeria/pizzeria/bin/Debug/net8.0/../../../Data/archived_orders.json.
+6/16/2025 7:38:50 PM: INFO: OrderQueue initialized.
+6/16/2025 7:38:50 PM: INFO: Users loaded successfully from /home/knrt/Desktop/ANOTHER/pizzeria-projekt-po/pizzeria/pizzeria/bin/Debug/net8.0/../../../Data/users.json.
+6/16/2025 7:38:50 PM: INFO: UserManager initialized.
+6/16/2025 7:38:57 PM: WARNING: Login or password was empty during username attempt.
+6/16/2025 7:38:59 PM: WARNING: Login or password was empty during username attempt.
+6/16/2025 7:39:01 PM: WARNING: Register: Invalid username attempt: ''

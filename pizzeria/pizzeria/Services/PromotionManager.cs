@@ -4,31 +4,7 @@ namespace pizzeria.Services
 {
     public class PromotionManager : IPromotionManager
     {
-        public List<IPromotion> Promotions { get; } = new()
-        {
-            new BuyXGetYFreePromotion
-            {
-                Name = "Buy 2 Get 1 Free",
-                StartDate = DateTime.Now.AddDays(-1),
-                EndDate = DateTime.Now.AddDays(30),
-                X = 2,
-                Y = 1
-            },
-            new FirstOrderPromotion
-            {
-                Name = "First Order Discount",
-                StartDate = DateTime.Now.AddDays(-1),
-                EndDate = DateTime.Now.AddDays(30),
-                DiscountPercentage = 10
-            },
-            new PercentagePromotion
-            {
-                Name = "Summer 10% Off",
-                StartDate = DateTime.Now.AddDays(-1),
-                EndDate = DateTime.Now.AddDays(30),
-                DiscountPercentage = 10
-            }
-        };
+        public required List<IPromotion> Promotions { get; init; } = new List<IPromotion>();
 
         public IEnumerable<IPromotion> GetActivePromotions()
         {
