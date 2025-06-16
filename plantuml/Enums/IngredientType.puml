@@ -1,0 +1,9 @@
+@startuml
+enum IngredientType {
+    Default,
+    Sauce,
+    Cheese,
+    Meat,
+    Vegetable,
+}
+@enduml

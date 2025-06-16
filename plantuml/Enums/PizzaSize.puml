@@ -1,0 +1,7 @@
+@startuml
+enum PizzaSize {
+    Small,
+    Medium,
+    Large,
+}
+@enduml

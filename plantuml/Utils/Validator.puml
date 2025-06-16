@@ -1,0 +1,7 @@
+@startuml
+class Validator <<static>> {
+    + {static} IsValidLogin(login:string) : bool
+    + {static} IsValidPassword(password:string) : bool
+    + {static} IsValidName(name:string) : bool
+}
+@enduml

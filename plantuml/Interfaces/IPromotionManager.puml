@@ -1,0 +1,7 @@
+@startuml
+interface IPromotionManager {
+    Promotions : List<IPromotion> <<get>>
+    GetActivePromotions() : IEnumerable<IPromotion>
+    GetBestPromotion(order:Order) : (string? Name, decimal Discount)
+}
+@enduml

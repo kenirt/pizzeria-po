@@ -1,0 +1,8 @@
+@startuml
+enum IngredientRestriction {
+    None,
+    MaxOne,
+    MaxTwo,
+    OnlyLargePizza,
+}
+@enduml

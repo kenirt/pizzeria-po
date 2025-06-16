@@ -1,0 +1,7 @@
+@startuml
+interface IPizza {
+    Name : string <<get>>
+    Size : PizzaSize <<get>>
+    CalculatePrice() : decimal
+}
+@enduml

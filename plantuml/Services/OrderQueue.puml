@@ -1,0 +1,29 @@
+@startuml
+class OrderQueue {
+    + ActiveOrders : List<Order> <<get>>
+    + ArchivedOrders : List<OrderArchiveSnapshot> <<get>>
+    - <<readonly>> _promotionManager : IPromotionManager
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _activeOrdersPath : string
+    - <<readonly>> _archivedOrdersPath : string
+    + OrderQueue(promotionManager:IPromotionManager, logger:ILogger)
+    - GetNextAvailableOrderId() : int
+    - LoadOrdersFromFile() : void
+    - SaveOrdersToFile() : void
+    + Initialize() : void
+    + Shutdown() : void
+    + PlaceOrder(username:string, pizzas:List<IPizza>) : int
+    + CancelOrder(orderId:int, isEmployee:bool, username:string) : void
+    + CancelAllOrders() : void
+    + ClearOrderHistory() : void
+    + GetOrder(orderId:int) : Order
+    + GetAllOrders() : List<Order>
+    + SetOrderStatus(orderId:int, status:OrderStatus) : void
+    + AdvanceOrderStatus(orderId:int) : void
+    + GetActiveOrdersByStatus(status:OrderStatus) : List<Order>
+    + GetActiveOrdersByUserId(username:string) : List<Order>
+    + GetArchivedOrdersByUserId(username:string) : List<OrderArchiveSnapshot>
+    + HasUserMadeAnyOrders(username:string) : bool
+}
+IOrderQueue <|-- OrderQueue
+@enduml

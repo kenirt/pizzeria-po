@@ -1,0 +1,38 @@
+@startuml
+class Order {
+    + Id : int <<get>>
+    + Status : OrderStatus <<get>>
+    + StatusHistory : List<OrderStatusHistoryEntry> <<get>>
+    + Username : string <<get>>
+    + Pizzas : List<OrderPizzaSnapshot> <<get>>
+    + InitialPrice : decimal <<get>>
+    + FinalPrice : decimal <<get>>
+    + PromotionName : string? <<get>>
+    + IsFirstOrder : bool <<get>>
+    + Order(id:int, status:OrderStatus, statusHistory:List<OrderStatusHistoryEntry>, username:string, pizzas:List<OrderPizzaSnapshot>, initialPrice:decimal, isFirstOrder:bool, finalPrice:decimal, promotionName:string?)
+    + SetStatus(status:OrderStatus) : void
+    + SetPromotionName(promotionName:string) : void
+    + SetFinalPrice(price:decimal) : void
+}
+class OrderPizzaSnapshot {
+    + <<required>> Name : string <<get>> <<init>>
+    + <<required>> Size : string <<get>> <<init>>
+    + <<required>> Price : decimal <<get>> <<init>>
+    + Ingredients : List<string>? <<get>> <<init>>
+    + OrderPizzaSnapshot()
+}
+class OrderStatusHistoryEntry {
+    + <<required>> Status : OrderStatus <<get>> <<init>>
+    + <<required>> Timestamp : DateTime <<get>> <<init>>
+    + OrderStatusHistoryEntry()
+}
+class OrderArchiveSnapshot {
+    + <<required>> StatusHistory : List<OrderStatusHistoryEntry> <<get>> <<init>>
+    + <<required>> Username : string <<get>> <<init>>
+    + <<required>> Pizzas : List<OrderPizzaSnapshot> <<get>> <<init>>
+    + <<required>> InitialPrice : decimal <<get>> <<init>>
+    + <<required>> FinalPrice : decimal <<get>> <<init>>
+    + <<required>> PromotionName : string? <<get>> <<init>>
+    + OrderArchiveSnapshot()
+}
+@enduml

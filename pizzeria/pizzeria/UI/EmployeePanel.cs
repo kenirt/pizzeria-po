@@ -1,10 +1,10 @@
+using pizzeria.Interfaces;
+using pizzeria.Models;
+
+
 namespace pizzeria.UI
 {
-    using System;
-    using pizzeria.Interfaces;
-    using pizzeria.Models;
-
-    public partial class EmployeePanel
+    public class EmployeePanel
     {
         private readonly IOrderQueue _orderQueue;
         private readonly Menu _menu;
@@ -178,6 +178,6 @@ namespace pizzeria.UI
                 }
             }
         }
-            
+
     }
 }

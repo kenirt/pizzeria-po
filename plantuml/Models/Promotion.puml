@@ -1,0 +1,38 @@
+@startuml
+abstract class PromotionBase {
+    + Id : Guid <<get>> <<init>>
+    + Name : string <<get>> <<init>>
+    + StartDate : DateTime <<get>> <<init>>
+    + EndDate : DateTime <<get>> <<init>>
+    + IsActive() : bool
+    + {abstract} IsApplicable(order:Order) : bool
+    + {abstract} CalculateDiscount(order:Order) : decimal
+}
+class PercentagePromotion {
+    + DiscountPercentage : decimal <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+class FirstOrderPromotion {
+    + DiscountPercentage : decimal <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+class BuyXGetYFreePromotion {
+    + X : int <<get>> <<init>>
+    + Y : int <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+class MinOrderValuePromotion {
+    + MinOrderValue : decimal <<get>> <<init>>
+    + DiscountAmount : decimal <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+IPromotion <|-- PromotionBase
+PromotionBase <|-- PercentagePromotion
+PromotionBase <|-- FirstOrderPromotion
+PromotionBase <|-- BuyXGetYFreePromotion
+PromotionBase <|-- MinOrderValuePromotion
+@enduml

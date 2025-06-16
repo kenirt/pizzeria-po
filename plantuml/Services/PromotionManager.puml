@@ -1,0 +1,8 @@
+@startuml
+class PromotionManager {
+    + <<required>> Promotions : List<IPromotion> <<get>> <<init>>
+    + GetActivePromotions() : IEnumerable<IPromotion>
+    + GetBestPromotion(order:Order) : (string? Name, decimal Discount)
+}
+IPromotionManager <|-- PromotionManager
+@enduml

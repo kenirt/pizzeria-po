@@ -1,0 +1,316 @@
+@startuml
+class Program {
+    + {static} Main() : void
+}
+class UserManager {
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _usersFilePath : string
+    + Users : List<User> <<get>>
+    - LoadUsers() : void
+    - SaveUsers() : void
+    + CreateUser(name:string, username:string, password:string) : void
+    + Initialize() : void
+    + Shutdown() : void
+    + RemoveUserByUsername(username:string) : bool
+    + AuthenticateUser(username:string, password:string) : User?
+    + GetUserByUsername(username:string) : User?
+    + UserManager(logger:ILogger)
+}
+IUserManager <|-- UserManager
+class PromotionManager {
+    + <<required>> Promotions : List<IPromotion> <<get>> <<init>>
+    + GetActivePromotions() : IEnumerable<IPromotion>
+    + GetBestPromotion(order:Order) : (string? Name, decimal Discount)
+}
+IPromotionManager <|-- PromotionManager
+class OrderQueue {
+    + ActiveOrders : List<Order> <<get>>
+    + ArchivedOrders : List<OrderArchiveSnapshot> <<get>>
+    - <<readonly>> _promotionManager : IPromotionManager
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _activeOrdersPath : string
+    - <<readonly>> _archivedOrdersPath : string
+    + OrderQueue(promotionManager:IPromotionManager, logger:ILogger)
+    - GetNextAvailableOrderId() : int
+    - LoadOrdersFromFile() : void
+    - SaveOrdersToFile() : void
+    + Initialize() : void
+    + Shutdown() : void
+    + PlaceOrder(username:string, pizzas:List<IPizza>) : int
+    + CancelOrder(orderId:int, isEmployee:bool, username:string) : void
+    + CancelAllOrders() : void
+    + ClearOrderHistory() : void
+    + GetOrder(orderId:int) : Order
+    + GetAllOrders() : List<Order>
+    + SetOrderStatus(orderId:int, status:OrderStatus) : void
+    + AdvanceOrderStatus(orderId:int) : void
+    + GetActiveOrdersByStatus(status:OrderStatus) : List<Order>
+    + GetActiveOrdersByUserId(username:string) : List<Order>
+    + GetArchivedOrdersByUserId(username:string) : List<OrderArchiveSnapshot>
+    + HasUserMadeAnyOrders(username:string) : bool
+}
+IOrderQueue <|-- OrderQueue
+class SessionService {
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _userManager : IUserManager
+    - _currentUser : User?
+    + CurrentUser : User? <<get>>
+    + StartSession(username:string, password:string) : void
+    + EndSession() : void
+}
+class FileLogger {
+    - <<readonly>> _logFilePath : string
+    + FileLogger(logFilePath:string?)
+    + LogError(message:string) : void
+    + LogWarning(message:string) : void
+    + LogInfo(message:string) : void
+}
+ILogger <|-- FileLogger
+class Menu {
+    + <<required>> MenuItems : List<MenuItem> <<get>> <<init>>
+    + <<required>> Ingredients : List<Ingredient> <<get>> <<init>>
+}
+class MenuItem {
+    + Id : Guid <<get>> <<init>>
+    + <<required>> Name : string <<get>> <<init>>
+    + <<required>> Price : decimal <<get>> <<init>>
+    + Ingredients : List<Ingredient> <<get>> <<init>>
+}
+class Ingredient {
+    + Id : Guid <<get>> <<init>>
+    + <<required>> Name : string <<get>> <<init>>
+    + <<required>> Price : decimal <<get>> <<init>>
+    + <<required>> Restriction : IngredientRestriction <<get>> <<init>>
+    + Type : IngredientType <<get>> <<init>>
+}
+class User {
+    + <<required>> Username : string <<get>> <<init>>
+    + <<required>> Name : string <<get>> <<init>>
+    + <<required>> Password : string <<get>> <<init>>
+    + User()
+}
+class Order {
+    + Id : int <<get>>
+    + Status : OrderStatus <<get>>
+    + StatusHistory : List<OrderStatusHistoryEntry> <<get>>
+    + Username : string <<get>>
+    + Pizzas : List<OrderPizzaSnapshot> <<get>>
+    + InitialPrice : decimal <<get>>
+    + FinalPrice : decimal <<get>>
+    + PromotionName : string? <<get>>
+    + IsFirstOrder : bool <<get>>
+    + Order(id:int, status:OrderStatus, statusHistory:List<OrderStatusHistoryEntry>, username:string, pizzas:List<OrderPizzaSnapshot>, initialPrice:decimal, isFirstOrder:bool, finalPrice:decimal, promotionName:string?)
+    + SetStatus(status:OrderStatus) : void
+    + SetPromotionName(promotionName:string) : void
+    + SetFinalPrice(price:decimal) : void
+}
+class OrderPizzaSnapshot {
+    + <<required>> Name : string <<get>> <<init>>
+    + <<required>> Size : string <<get>> <<init>>
+    + <<required>> Price : decimal <<get>> <<init>>
+    + Ingredients : List<string>? <<get>> <<init>>
+    + OrderPizzaSnapshot()
+}
+class OrderStatusHistoryEntry {
+    + <<required>> Status : OrderStatus <<get>> <<init>>
+    + <<required>> Timestamp : DateTime <<get>> <<init>>
+    + OrderStatusHistoryEntry()
+}
+class OrderArchiveSnapshot {
+    + <<required>> StatusHistory : List<OrderStatusHistoryEntry> <<get>> <<init>>
+    + <<required>> Username : string <<get>> <<init>>
+    + <<required>> Pizzas : List<OrderPizzaSnapshot> <<get>> <<init>>
+    + <<required>> InitialPrice : decimal <<get>> <<init>>
+    + <<required>> FinalPrice : decimal <<get>> <<init>>
+    + <<required>> PromotionName : string? <<get>> <<init>>
+    + OrderArchiveSnapshot()
+}
+abstract class PromotionBase {
+    + Id : Guid <<get>> <<init>>
+    + Name : string <<get>> <<init>>
+    + StartDate : DateTime <<get>> <<init>>
+    + EndDate : DateTime <<get>> <<init>>
+    + IsActive() : bool
+    + {abstract} IsApplicable(order:Order) : bool
+    + {abstract} CalculateDiscount(order:Order) : decimal
+}
+class PercentagePromotion {
+    + DiscountPercentage : decimal <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+class FirstOrderPromotion {
+    + DiscountPercentage : decimal <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+class BuyXGetYFreePromotion {
+    + X : int <<get>> <<init>>
+    + Y : int <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+class MinOrderValuePromotion {
+    + MinOrderValue : decimal <<get>> <<init>>
+    + DiscountAmount : decimal <<get>> <<init>>
+    + <<override>> IsApplicable(order:Order) : bool
+    + <<override>> CalculateDiscount(order:Order) : decimal
+}
+IPromotion <|-- PromotionBase
+PromotionBase <|-- PercentagePromotion
+PromotionBase <|-- FirstOrderPromotion
+PromotionBase <|-- BuyXGetYFreePromotion
+PromotionBase <|-- MinOrderValuePromotion
+abstract class PizzaBase {
+    + Name : string <<get>> <<protected set>>
+    + Size : PizzaSize <<get>> <<protected set>>
+    + {abstract} CalculatePrice() : decimal
+}
+class MenuPizza {
+    - <<readonly>> BasePrice : decimal
+    + <<override>> CalculatePrice() : decimal
+}
+class CustomPizza {
+    + Ingredients : List<Ingredient> <<get>>
+    + <<override>> CalculatePrice() : decimal
+}
+IPizza <|-- PizzaBase
+PizzaBase <|-- MenuPizza
+PizzaBase <|-- CustomPizza
+enum IngredientType {
+    Default,
+    Sauce,
+    Cheese,
+    Meat,
+    Vegetable,
+}
+enum IngredientRestriction {
+    None,
+    MaxOne,
+    MaxTwo,
+    OnlyLargePizza,
+}
+enum OrderStatus {
+    Pending,
+    InPreparation,
+    Ready,
+    Cancelled,
+    Delivered,
+}
+enum PizzaSize {
+    Small,
+    Medium,
+    Large,
+}
+class MainUI {
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _userManager : IUserManager
+    - <<readonly>> _orderQueue : IOrderQueue
+    - <<readonly>> _sessionService : SessionService
+    - <<readonly>> _menu : Menu
+    + MainUI(logger:ILogger, userManager:IUserManager, orderQueue:IOrderQueue, sessionService:SessionService, menu:Menu)
+    + Run() : void
+}
+class UserPanel {
+    - <<readonly>> _orderQueue : IOrderQueue
+    - <<readonly>> _username : string
+    - <<readonly>> _menu : Menu
+    - _pizzas : List<IPizza>
+    + UserPanel(orderQueue:IOrderQueue, name:string, menu:Menu)
+    - ViewOrders() : void
+    - AddPizzaToOrder() : void
+    - MakeOrder() : void
+    - ViewMenu() : void
+    - ViewIngredients() : void
+    + Show() : void
+}
+class EmployeePanel <<partial>> {
+    - <<readonly>> _orderQueue : IOrderQueue
+    - <<readonly>> _menu : Menu
+    - <<readonly>> _logger : ILogger
+    + EmployeePanel(orderQueue:IOrderQueue, menu:Menu, logger:ILogger)
+    - ViewOrders() : void
+    - UpdateOrderStatus() : void
+    - CancelOrder() : void
+    - ManageOrders() : void
+    + Show() : void
+}
+class ListOrders {
+    - <<readonly>> _orderQueue : IOrderQueue
+    + ListOrders(orderQueue:IOrderQueue)
+    + ShowAllActiveOrders() : void
+    + ShowAllArchivedOrders() : void
+    + ShowUserActiveOrders(username:string) : void
+    + ShowUserArchivedOrders(username:string) : void
+    - PrintOrder(order:Order) : void
+    - PrintArchivedOrder(order:OrderArchiveSnapshot) : void
+}
+class LoginPanel {
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _userManager : IUserManager
+    - <<readonly>> _sessionService : SessionService
+    - LoggedIn : bool = false
+    + LoginPanel(logger:ILogger, userManager:IUserManager, sessionService:SessionService)
+    - Login() : void
+    - Register() : void
+    + Show() : void
+}
+interface IPizza {
+    Name : string <<get>>
+    Size : PizzaSize <<get>>
+    CalculatePrice() : decimal
+}
+interface IPromotionManager {
+    Promotions : List<IPromotion> <<get>>
+    GetActivePromotions() : IEnumerable<IPromotion>
+    GetBestPromotion(order:Order) : (string? Name, decimal Discount)
+}
+interface IUserManager {
+    Users : List<User> <<get>>
+    Initialize() : void
+    Shutdown() : void
+    CreateUser(name:string, username:string, password:string) : void
+    RemoveUserByUsername(username:string) : bool
+    GetUserByUsername(login:string) : User?
+    AuthenticateUser(login:string, password:string) : User?
+}
+interface IOrderQueue {
+    ActiveOrders : List<Order> <<get>>
+    ArchivedOrders : List<OrderArchiveSnapshot> <<get>>
+    Initialize() : void
+    Shutdown() : void
+    PlaceOrder(username:string, pizzas:List<IPizza>) : int
+    CancelOrder(orderId:int, employee:bool, username:string) : void
+    CancelAllOrders() : void
+    ClearOrderHistory() : void
+    GetOrder(orderId:int) : Order
+    GetAllOrders() : List<Order>
+    SetOrderStatus(orderId:int, status:OrderStatus) : void
+    AdvanceOrderStatus(orderId:int) : void
+    GetActiveOrdersByStatus(status:OrderStatus) : List<Order>
+    GetActiveOrdersByUserId(username:string) : List<Order>
+    GetArchivedOrdersByUserId(username:string) : List<OrderArchiveSnapshot>
+}
+interface IPromotion {
+    + Id : Guid <<get>>
+    Name : string <<get>>
+    StartDate : DateTime <<get>>
+    EndDate : DateTime <<get>>
+    IsActive() : bool
+    IsApplicable(order:Order) : bool
+    CalculateDiscount(order:Order) : decimal
+}
+interface ILogger {
+    LogError(message:string) : void
+    LogWarning(message:string) : void
+    LogInfo(message:string) : void
+}
+class Validator <<static>> {
+    + {static} IsValidLogin(login:string) : bool
+    + {static} IsValidPassword(password:string) : bool
+    + {static} IsValidName(name:string) : bool
+}
+class HashPassword <<static>> {
+    + {static} Hash(password:string) : string
+}
+@enduml

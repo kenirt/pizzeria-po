@@ -1,0 +1,11 @@
+@startuml
+interface IUserManager {
+    Users : List<User> <<get>>
+    Initialize() : void
+    Shutdown() : void
+    CreateUser(name:string, username:string, password:string) : void
+    RemoveUserByUsername(username:string) : bool
+    GetUserByUsername(login:string) : User?
+    AuthenticateUser(login:string, password:string) : User?
+}
+@enduml

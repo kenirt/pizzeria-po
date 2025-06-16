@@ -1,0 +1,11 @@
+@startuml
+class MainUI {
+    - <<readonly>> _logger : ILogger
+    - <<readonly>> _userManager : IUserManager
+    - <<readonly>> _orderQueue : IOrderQueue
+    - <<readonly>> _sessionService : SessionService
+    - <<readonly>> _menu : Menu
+    + MainUI(logger:ILogger, userManager:IUserManager, orderQueue:IOrderQueue, sessionService:SessionService, menu:Menu)
+    + Run() : void
+}
+@enduml

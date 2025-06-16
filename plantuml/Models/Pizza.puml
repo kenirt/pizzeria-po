@@ -1,0 +1,18 @@
+@startuml
+abstract class PizzaBase {
+    + Name : string <<get>> <<protected set>>
+    + Size : PizzaSize <<get>> <<protected set>>
+    + {abstract} CalculatePrice() : decimal
+}
+class MenuPizza {
+    - <<readonly>> BasePrice : decimal
+    + <<override>> CalculatePrice() : decimal
+}
+class CustomPizza {
+    + Ingredients : List<Ingredient> <<get>>
+    + <<override>> CalculatePrice() : decimal
+}
+IPizza <|-- PizzaBase
+PizzaBase <|-- MenuPizza
+PizzaBase <|-- CustomPizza
+@enduml

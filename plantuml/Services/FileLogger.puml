@@ -1,0 +1,10 @@
+@startuml
+class FileLogger {
+    - <<readonly>> _logFilePath : string
+    + FileLogger(logFilePath:string?)
+    + LogError(message:string) : void
+    + LogWarning(message:string) : void
+    + LogInfo(message:string) : void
+}
+ILogger <|-- FileLogger
+@enduml

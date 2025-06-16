@@ -1,0 +1,15 @@
+@startuml
+class UserPanel {
+    - <<readonly>> _orderQueue : IOrderQueue
+    - <<readonly>> _username : string
+    - <<readonly>> _menu : Menu
+    - _pizzas : List<IPizza>
+    + UserPanel(orderQueue:IOrderQueue, name:string, menu:Menu)
+    - ViewOrders() : void
+    - AddPizzaToOrder() : void
+    - MakeOrder() : void
+    - ViewMenu() : void
+    - ViewIngredients() : void
+    + Show() : void
+}
+@enduml
