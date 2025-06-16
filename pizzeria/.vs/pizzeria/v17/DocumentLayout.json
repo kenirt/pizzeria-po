@@ -1,102 +1,102 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\iorderqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\iorderqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\employeepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\employeepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\data\\archived_orders.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\data\\archived_orders.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\enums\\ingredienttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\enums\\ingredienttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ipromotionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ipromotionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ipromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ipromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ipizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ipizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\listorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\listorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\listorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\utils\\hashpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\iorderqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\iorderqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\ui\\employeepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\ui\\employeepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\data\\archived_orders.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\data\\archived_orders.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\enums\\ingredienttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\enums\\ingredienttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ipromotionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ipromotionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ipromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ipromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\interfaces\\ipizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\interfaces\\ipizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\utils\\hashpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\utils\\hashpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\utils\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\utils\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\utils\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\enums\\ingredientrestriction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\enums\\ingredientrestriction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\enums\\ingredientrestriction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|c:\\users\\asus\\consoleappcore\\jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2800DC7-6B41-445A-8F1B-99C982FFF096}|pizzeria\\pizzeria.csproj|solutionrelative:pizzeria\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,93 +106,87 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IUserManager.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IUserManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IUserManager.cs",
               "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IUserManager.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IUserManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IUserManager.cs",
               "RelativeToolTip": "pizzeria\\Interfaces\\IUserManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:04:56.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T11:04:56.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPromotionManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotionManager.cs",
+              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IPromotionManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotionManager.cs",
+              "RelativeToolTip": "pizzeria\\Interfaces\\IPromotionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:04:54.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IPromotion.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotion.cs",
+              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IPromotion.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotion.cs",
+              "RelativeToolTip": "pizzeria\\Interfaces\\IPromotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:04:48.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IPizza.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPizza.cs",
+              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IPizza.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPizza.cs",
+              "RelativeToolTip": "pizzeria\\Interfaces\\IPizza.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:04:43.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IOrderQueue.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IOrderQueue.cs",
+              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IOrderQueue.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IOrderQueue.cs",
+              "RelativeToolTip": "pizzeria\\Interfaces\\IOrderQueue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:04:36.432Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "IPromotionManager.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotionManager.cs",
-              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IPromotionManager.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotionManager.cs",
-              "RelativeToolTip": "pizzeria\\Interfaces\\IPromotionManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:04:54.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IPromotion.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotion.cs",
-              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IPromotion.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPromotion.cs",
-              "RelativeToolTip": "pizzeria\\Interfaces\\IPromotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:04:48.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IPizza.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPizza.cs",
-              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IPizza.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IPizza.cs",
-              "RelativeToolTip": "pizzeria\\Interfaces\\IPizza.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:04:43.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IOrderQueue.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IOrderQueue.cs",
-              "RelativeDocumentMoniker": "pizzeria\\Interfaces\\IOrderQueue.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\IOrderQueue.cs",
-              "RelativeToolTip": "pizzeria\\Interfaces\\IOrderQueue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:04:36.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "ILogger.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\ILogger.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\ILogger.cs",
               "RelativeDocumentMoniker": "pizzeria\\Interfaces\\ILogger.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\ILogger.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Interfaces\\ILogger.cs",
               "RelativeToolTip": "pizzeria\\Interfaces\\ILogger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T11:04:33.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T11:04:33.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Menu.cs",
               "RelativeDocumentMoniker": "pizzeria\\Models\\Menu.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Menu.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Menu.cs",
               "RelativeToolTip": "pizzeria\\Models\\Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -201,37 +195,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Order.cs",
               "RelativeDocumentMoniker": "pizzeria\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Order.cs",
               "RelativeToolTip": "pizzeria\\Models\\Order.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAywD8AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAIA4wEwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T10:58:01.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Pizza.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Pizza.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Pizza.cs",
               "RelativeDocumentMoniker": "pizzeria\\Models\\Pizza.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Pizza.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Pizza.cs",
               "RelativeToolTip": "pizzeria\\Models\\Pizza.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T10:57:22.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Promotion.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Promotion.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Promotion.cs",
               "RelativeDocumentMoniker": "pizzeria\\Models\\Promotion.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Promotion.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\Promotion.cs",
               "RelativeToolTip": "pizzeria\\Models\\Promotion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -240,24 +234,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "archived_orders.json",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Data\\archived_orders.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Data\\archived_orders.json",
               "RelativeDocumentMoniker": "pizzeria\\Data\\archived_orders.json",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Data\\archived_orders.json",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Data\\archived_orders.json",
               "RelativeToolTip": "pizzeria\\Data\\archived_orders.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-15T10:44:17.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T10:44:17.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\User.cs",
               "RelativeDocumentMoniker": "pizzeria\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Models\\User.cs",
               "RelativeToolTip": "pizzeria\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -266,11 +259,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "UserManager.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Services\\UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Services\\UserManager.cs",
               "RelativeDocumentMoniker": "pizzeria\\Services\\UserManager.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Services\\UserManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Services\\UserManager.cs",
               "RelativeToolTip": "pizzeria\\Services\\UserManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -279,37 +272,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "EmployeePanel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\EmployeePanel.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\EmployeePanel.cs",
               "RelativeDocumentMoniker": "pizzeria\\UI\\EmployeePanel.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\EmployeePanel.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\EmployeePanel.cs",
               "RelativeToolTip": "pizzeria\\UI\\EmployeePanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T10:56:55.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T10:56:55.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "IngredientType.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientType.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientType.cs",
               "RelativeDocumentMoniker": "pizzeria\\Enums\\IngredientType.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientType.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientType.cs",
               "RelativeToolTip": "pizzeria\\Enums\\IngredientType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T10:52:35.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T10:52:35.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 4,
               "Title": "OrderStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\OrderStatus.cs",
               "RelativeDocumentMoniker": "pizzeria\\Enums\\OrderStatus.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\OrderStatus.cs",
               "RelativeToolTip": "pizzeria\\Enums\\OrderStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -318,63 +309,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IngredientRestriction.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientRestriction.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientRestriction.cs",
               "RelativeDocumentMoniker": "pizzeria\\Enums\\IngredientRestriction.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientRestriction.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Enums\\IngredientRestriction.cs",
               "RelativeToolTip": "pizzeria\\Enums\\IngredientRestriction.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T10:29:40.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T10:29:40.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
               "Title": "ListOrders.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\ListOrders.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\ListOrders.cs",
               "RelativeDocumentMoniker": "pizzeria\\UI\\ListOrders.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\ListOrders.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\ListOrders.cs",
               "RelativeToolTip": "pizzeria\\UI\\ListOrders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAEwCsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T10:10:10.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "HashPassword.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\HashPassword.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\HashPassword.cs",
               "RelativeDocumentMoniker": "pizzeria\\Utils\\HashPassword.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\HashPassword.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\HashPassword.cs",
               "RelativeToolTip": "pizzeria\\Utils\\HashPassword.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T10:09:49.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T10:09:49.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Validator.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\Validator.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\Validator.cs",
               "RelativeDocumentMoniker": "pizzeria\\Utils\\Validator.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\Validator.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Utils\\Validator.cs",
               "RelativeToolTip": "pizzeria\\Utils\\Validator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T10:09:47.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T10:09:47.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 7,
               "Title": "LoginPanel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\LoginPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\LoginPanel.cs",
               "RelativeDocumentMoniker": "pizzeria\\UI\\LoginPanel.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\LoginPanel.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\LoginPanel.cs",
               "RelativeToolTip": "pizzeria\\UI\\LoginPanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,39 +371,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserPanel.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\UserPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\UserPanel.cs",
               "RelativeDocumentMoniker": "pizzeria\\UI\\UserPanel.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\UserPanel.cs*",
-              "RelativeToolTip": "pizzeria\\UI\\UserPanel.cs*",
-              "ViewState": "AgIAABgBAAAAAAAAAAAxwBsBAABCAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\UserPanel.cs",
+              "RelativeToolTip": "pizzeria\\UI\\UserPanel.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAnwEwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T10:00:41.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MainUI.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\MainUI.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\MainUI.cs",
               "RelativeDocumentMoniker": "pizzeria\\UI\\MainUI.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\MainUI.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\UI\\MainUI.cs",
               "RelativeToolTip": "pizzeria\\UI\\MainUI.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T09:39:43.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Program.cs",
               "RelativeDocumentMoniker": "pizzeria\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\Program.cs",
               "RelativeToolTip": "pizzeria\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwCkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T16:56:42.175Z",
               "EditorCaption": ""

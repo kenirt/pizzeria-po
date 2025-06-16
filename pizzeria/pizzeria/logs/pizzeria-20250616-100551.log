@@ -1,0 +1,13 @@
+16.06.2025 10:05:52: INFO: Active orders loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+16.06.2025 10:05:52: INFO: Archived orders loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+16.06.2025 10:05:52: INFO: OrderQueue initialized.
+16.06.2025 10:05:52: INFO: Users loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+16.06.2025 10:05:52: INFO: UserManager initialized.
+16.06.2025 10:06:00: WARNING: User with username 'Smakosz' not found.
+16.06.2025 10:06:04: WARNING: Register: Invalid password attempt for user 'Smakosz': 'Smakosz123'
+16.06.2025 10:06:16: INFO: Shutting down services...
+16.06.2025 10:06:16: INFO: Users saved successfully to C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+16.06.2025 10:06:16: INFO: UserManager shutdown. Users saved to file.
+16.06.2025 10:06:16: INFO: Active orders saved successfully to C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+16.06.2025 10:06:16: INFO: Archived orders saved successfully to C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+16.06.2025 10:06:16: INFO: OrderQueue shutdown. Active orders saved to file.

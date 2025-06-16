@@ -1,0 +1,7 @@
+16.06.2025 13:33:24: INFO: Active orders loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+16.06.2025 13:33:24: INFO: Archived orders loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+16.06.2025 13:33:24: INFO: OrderQueue initialized.
+16.06.2025 13:33:25: INFO: Users loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+16.06.2025 13:33:25: INFO: UserManager initialized.
+16.06.2025 13:33:25: INFO: User authenticated successfully: test, Login: test
+16.06.2025 13:33:25: INFO: Session started for user: test

@@ -56,7 +56,6 @@ namespace pizzeria.UI
                 return;
             }
 
-            Console.WriteLine($"Archived Orders for:");
             foreach (var order in orders)
             {
                 PrintArchivedOrder(order);

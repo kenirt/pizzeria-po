@@ -39,18 +39,7 @@ public class Program
                 new() { Name = "BBQ Chicken", Price = 11.49m, Ingredients = new List<Ingredient> { ingredients[2], ingredients[4], ingredients[8]  }},
                 new() { Name = "Hawaiian", Price = 10.49m, Ingredients = new List < Ingredient > { ingredients[0], ingredients[7] }},
             },
-            Ingredients = new List<Ingredient>
-            {
-                new() { Name = "Tomato Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
-                new() { Name = "Marinara Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
-                new() { Name = "Barbecue Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
-                new() { Name = "Pesto Sauce", Price = 0.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Sauce },
-                new() { Name = "Mozzarella Cheese", Price = 1.00m, Restriction = IngredientRestriction.None, Type = IngredientType.Cheese },
-                new() { Name = "Pepperoni", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat },
-                new() { Name = "Ham", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat },
-                new() { Name = "Pineapple", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Vegetable },
-                new() { Name = "chicken", Price = 1.50m, Restriction = IngredientRestriction.None, Type = IngredientType.Meat }
-            }
+            Ingredients = ingredients
         };
 
         MainUI mainUI = new MainUI(logger, userManager, orderQueue, sessionService, menu);

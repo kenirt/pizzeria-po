@@ -74,7 +74,7 @@ namespace pizzeria.UI
                 if (historyInput?.Trim().ToLower() == "y")
                 {
                     Console.WriteLine();
-                    Console.WriteLine("Your Order History:");
+                    Console.WriteLine("Your Order History: \n");
                     listOrders.ShowUserArchivedOrders(_username);
                     Console.WriteLine();
                     Console.WriteLine("Press any key to return to the previous menu.");

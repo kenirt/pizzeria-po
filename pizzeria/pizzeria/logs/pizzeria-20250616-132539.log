@@ -1,0 +1,15 @@
+16.06.2025 13:25:40: INFO: Active orders loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+16.06.2025 13:25:40: INFO: Archived orders loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+16.06.2025 13:25:40: INFO: OrderQueue initialized.
+16.06.2025 13:25:40: INFO: Users loaded successfully from C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+16.06.2025 13:25:40: INFO: UserManager initialized.
+16.06.2025 13:25:40: INFO: User authenticated successfully: employee, Login: employee
+16.06.2025 13:25:40: INFO: Session started for user: employee
+16.06.2025 13:25:40: INFO: Employee log in.
+16.06.2025 13:26:10: INFO: Session ended for user: employee
+16.06.2025 13:26:11: INFO: Shutting down services...
+16.06.2025 13:26:11: INFO: Users saved successfully to C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\users.json.
+16.06.2025 13:26:11: INFO: UserManager shutdown. Users saved to file.
+16.06.2025 13:26:11: INFO: Active orders saved successfully to C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\active_orders.json.
+16.06.2025 13:26:11: INFO: Archived orders saved successfully to C:\Users\Asus\jkbctu\pizzeria-projekt-po\pizzeria\pizzeria\bin\Debug\net8.0\..\..\..\Data\archived_orders.json.
+16.06.2025 13:26:11: INFO: OrderQueue shutdown. Active orders saved to file.

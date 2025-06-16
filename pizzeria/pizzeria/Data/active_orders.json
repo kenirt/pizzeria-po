@@ -110,5 +110,35 @@
     "FinalPrice": 11.87,
     "PromotionName": "Summer 10% Off",
     "IsFirstOrder": false
+  },
+  {
+    "Id": 5,
+    "Status": 0,
+    "StatusHistory": [
+      {
+        "Status": 0,
+        "Timestamp": "2025-06-16T11:39:44.8799969Z"
+      }
+    ],
+    "Username": "test",
+    "Pizzas": [
+      {
+        "Name": "Custom Pizza",
+        "Size": "Medium",
+        "Price": 14.50,
+        "Ingredients": [
+          "Tomato Sauce",
+          "chicken",
+          "Pineapple",
+          "Ham",
+          "Pepperoni",
+          "Mozzarella Cheese"
+        ]
+      }
+    ],
+    "InitialPrice": 14.50,
+    "FinalPrice": 13.05,
+    "PromotionName": "Summer 10% Off",
+    "IsFirstOrder": false
   }
 ]

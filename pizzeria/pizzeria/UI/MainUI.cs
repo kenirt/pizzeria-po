@@ -30,7 +30,7 @@ namespace pizzeria.UI
             {
                 Console.WriteLine("Welcome to the Pizzeria Management System!");
                 LoginPanel login = new(_logger, _userManager, _sessionService);
-                //login.Show();
+               // login.Show();
 
 
                 if (_sessionService.CurrentUser == null)

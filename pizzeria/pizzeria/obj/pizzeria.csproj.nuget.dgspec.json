@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj": {}
+    "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj": {
+    "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj",
         "projectName": "pizzeria",
-        "projectPath": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj",
+        "projectPath": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\pizzeria.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\ConsoleAppCore\\Jolo\\pizzeria-projekt-po\\pizzeria\\pizzeria\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\jkbctu\\pizzeria-projekt-po\\pizzeria\\pizzeria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
