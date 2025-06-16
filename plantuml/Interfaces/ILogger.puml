@@ -1,7 +1,0 @@
-@startuml
-interface ILogger {
-    LogError(message:string) : void
-    LogWarning(message:string) : void
-    LogInfo(message:string) : void
-}
-@enduml

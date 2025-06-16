@@ -1,8 +1,0 @@
-@startuml
-class User {
-    + <<required>> Username : string <<get>> <<init>>
-    + <<required>> Name : string <<get>> <<init>>
-    + <<required>> Password : string <<get>> <<init>>
-    + User()
-}
-@enduml
